@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect — Privacy Policy</title>
+    <style>
+        /* MAPPED DIRECTLY FROM YOUR JETPACK COMPOSE THEMING */
+        :root {
+            --primary-navy: #003366;       /* UniConnectNavy */
+            --accent-teal: #00BFA5;        /* UniConnectTeal */
+            --accent-cyan: #00ACC1;        /* UniConnectCyan */
+            --light-bg: #F5F5F5;           /* LightGray */
+            --text-dark: #1A237E;          /* SoftNavy for readable dark headings */
+            --text-body: #2d3748;          /* Clean dark gray for readable prose */
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            color: var(--text-body); 
+            background-color: #ffffff;
+        }
+        
+        h1 { 
+            color: var(--primary-navy);
+            font-size: 2.2rem;
+            border-bottom: 4px solid var(--accent-teal); 
+            padding-bottom: 12px; 
+            margin-bottom: 25px;
+        }
+        
+        h2 { 
+            margin-top: 40px; 
+            color: var(--primary-navy); 
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--light-bg);
+            padding-bottom: 6px;
+        }
+        
+        p, li { 
+            font-size: 1.05rem;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--accent-teal);
+            text-decoration: underline;
+        }
+
+        ol, ul { 
+            padding-left: 20px; 
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight { 
+            background-color: var(--light-bg); 
+            border-left: 4px solid var(--accent-teal); 
+            padding: 18px; 
+            margin: 25px 0; 
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight strong {
+            color: var(--primary-navy);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PRIVACY POLICY</h1>
+    <p><strong>Last updated: July 7, 2026</strong></p>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to UniConnect (“Company”, “we”, “our”, “us”)! This Privacy Policy explains how we collect, safeguard, process, and disclose information that results from your use of our <strong>mobile application named UniConnect</strong> (together or individually “Service”). We are committed to protecting the data privacy of university students while maintaining an authentic, verified, and safe digital campus community.</p>
+
+    <h2>2. Information Collection & Firebase Authentication</h2>
+    <p>To register an account and safely navigate our platform, we collect specific personally identifiable parameters. By using the Service, you consent to the processing of:</p>
+    <ul>
+        <li><strong>University Student Email:</strong> Collected during registration to restrict access strictly to authorized university students.</li>
+        <li><strong>Phone Number Verification:</strong> Account activation requires a valid mobile phone number processed securely via Google Firebase Authentication. This number is processed to transmit one-time SMS verification tokens and enforce strict anti-bot and anti-fraud protocols.</li>
+        <li><strong>Profile Metadata:</strong> This includes your chosen username, display names, and biography responses provided during setup.</li>
+    </ul>
+
+    <h2>3. Identity Verification & AWS Facial Recognition</h2>
+    <div class="highlight">
+        <strong>AWS Rekognition 3D Liveness Checks:</strong> To completely mitigate identity theft, profile cloning, and platform impersonation, UniConnect integrates automated facial recognition tools via Amazon Web Services (AWS). During onboarding, a 3D facial liveness check is performed to analyze real-time video frames or snapshots. This confirms you are a real person matching your active credentials. <strong>UniConnect does not permanently store, log, or maintain raw biological biometric templates or structural facial maps on its databases.</strong>
+    </div>
+
+    <h2>4. Application Security & Device-Level Locks</h2>
+    <p>For your enhanced on-device privacy, the Service allows you to enable an app access lock using a localized PIN or your device's native biometric capabilities (such as fingerprint scanning or hardware-level facial recognition). This security layer operates entirely via your smartphone’s native operating system security architecture. UniConnect never reads, intercepts, captures, or transmits your biometric records or security codes.</p>
+
+    <h2>5. Location Data & Peer Matching</h2>
+    <p>To facilitate interactive campus networking, the Service collects and processes coordinates regarding your location. This geographical tracking is utilized exclusively to compute distances and unlock localized matching features, enabling you to discover and interact with nearby peers. We do not maintain historical tracking logs of your movements, nor do we share location coordinates with marketing or advertising networks.</p>
+
+    <h2>6. User-Generated Content & Photo Uploads</h2>
+    <p>Our Service hosts media and visual Content you actively choose to publish, including profile pictures, gallery updates, and feed images. By granting device storage or camera access permissions to upload these files, you acknowledge that your profile pictures and shared images will be accessible to other authenticated users in accordance with the application's matching and discovery mechanics.</p>
+
+    <div class="highlight">
+        <strong>Private Messaging Confidentiality (Encryption):</strong> Direct private text messages between users are fully encrypted. The Company does not read, parse, index, or retain messaging text parameters on its servers once successfully delivered. Message histories are held directly on user endpoints.
+    </div>
+
+    <h2>7. Safety, Reporting, and Blocking Mechanisms</h2>
+    <p>To enforce a respectful digital space, the Service incorporates dedicated community moderation systems:</p>
+    <ul>
+        <li><strong>User-Initiated Reporting:</strong> Users can flag any profile, uploaded image, or posted content that violates community standards. Reported parameters are routed immediately to system administrators for review and content removal.</li>
+        <li><strong>Peer Blocking:</strong> You maintain the absolute right to block any user instantly. Activating a block immediately halts all communication, hides all mutual profiles, and cuts off visibility across matching feeds.</li>
+        <li><strong>Enforcement Action:</strong> Accounts associated with verified harassment, explicit or offensive media, or unauthorized programmatic access will be suspended or permanently terminated.</li>
+    </ul>
+
+    <h2>8. Service Providers & Analytics</h2>
+    <p>We may employ third-party cloud infrastructure and performance analysis providers to log software crashes, monitor service uptimes, and diagnose structural stability parameters to maximize system reliability.</p>
+
+    <h2>9. Data Retention & Account Deletion</h2>
+    <div class="highlight">
+        <strong>Automated Purge Cycle:</strong> Users may execute an account deletion request directly within the App profile settings at any time. Upon submission, the account enters an inactive 30-day grace period during which all public profile cards, hosted images, match configurations, and verification mappings are hidden from the platform. You can reverse this by logging back in within the 30-day window. If left untouched for 30 consecutive days, your entire profile—including email references, Firebase phone mapping tokens, photos, matching metrics, and system data logs—is permanently and automatically purged from our servers.
+    </div>
+
+    <h2>10. Jurisdiction & Governing Law</h2>
+    <p>This Privacy Policy is interpreted and governed in strict compliance with the legal frameworks and data protection acts of Kenya, matching the regulatory standard applied to our Terms of Service.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions regarding this Privacy Policy, your personal rights, or data erasure processes, reach out directly via email to: <a href="mailto:machariasamuel465@gmail.com">machariasamuel465@gmail.com</a>.</p>
+
+</body>
+</html>
