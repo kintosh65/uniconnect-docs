@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect — Child Safety Policy</title>
+    <style>
+        /* MAPPED DIRECTLY FROM YOUR JETPACK COMPOSE THEMING */
+        :root {
+            --primary-navy: #003366;       /* UniConnectNavy */
+            --accent-teal: #00BFA5;        /* UniConnectTeal */
+            --accent-cyan: #00ACC1;        /* UniConnectCyan */
+            --light-bg: #F5F5F5;           /* LightGray */
+            --text-dark: #1A237E;          /* SoftNavy for readable dark headings */
+            --text-body: #2d3748;          /* Clean dark gray for readable prose */
+            --warning-bg: #FFF3E0;         /* Light warning background */
+            --warning-border: #FF9800;     /* Warning accent */
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            color: var(--text-body); 
+            background-color: #ffffff;
+        }
+        
+        h1 { 
+            color: var(--primary-navy);
+            font-size: 2.2rem;
+            border-bottom: 4px solid var(--accent-teal); 
+            padding-bottom: 12px; 
+            margin-bottom: 25px;
+        }
+        
+        h2 { 
+            margin-top: 40px; 
+            color: var(--primary-navy); 
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--light-bg);
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: var(--text-dark);
+            font-size: 1.15rem;
+        }
+        
+        p, li { 
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--accent-teal);
+            text-decoration: underline;
+        }
+
+        ol, ul { 
+            padding-left: 20px; 
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight { 
+            background-color: var(--light-bg); 
+            border-left: 4px solid var(--accent-teal); 
+            padding: 18px; 
+            margin: 25px 0; 
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight strong {
+            color: var(--primary-navy);
+        }
+
+        .warning-box {
+            background-color: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            padding: 18px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box strong {
+            color: var(--text-dark);
+        }
+
+        .feature-list {
+            display: grid;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background-color: var(--light-bg);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-cyan);
+        }
+
+        .feature-item strong {
+            color: var(--primary-navy);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-section {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CHILD SAFETY POLICY</h1>
+    <p><strong>Last updated: July 9, 2026</strong></p>
+
+    <h2>1. Introduction & Commitment</h2>
+    <p>Welcome to UniConnect's Child Safety Policy. UniConnect ("Company", "we", "our", "us") is committed to maintaining a secure, respectful, and age-appropriate environment for all users on our platform. This policy outlines our comprehensive approach to protecting younger users and ensuring compliance with child safety regulations and best practices.</p>
+
+    <p>We understand that protecting children online is a shared responsibility. Our platform is designed specifically for university students (typically 18+), but we recognize that safety mechanisms benefit all users. This document details our commitment to child protection, data privacy for vulnerable users, and our operational safeguards.</p>
+
+    <h2>2. Age Verification & Account Eligibility</h2>
+    <p>UniConnect is designed exclusively for university students and adult users aged 18 years and older. To maintain this commitment:</p>
+    
+    <div class="feature-list">
+        <div class="feature-item">
+            <strong>University Email Verification</strong>
+            Users must verify their account using an active university student email address. This ensures that accounts belong to legitimate, enrolled students within accredited institutions.
+        </div>
+        <div class="feature-item">
+            <strong>Identity Verification via AWS Facial Recognition</strong>
+            All users undergo a 3D liveness check during onboarding. This process confirms that the account holder is a real person and matches their submitted credentials, preventing unauthorized access by minors.
+        </div>
+        <div class="feature-item">
+            <strong>Phone Number Verification</strong>
+            Firebase Authentication requires a valid mobile phone number with SMS verification, adding an additional layer of account legitimacy and preventing account creation by unverified individuals.
+        </div>
+    </div>
+
+    <h2>3. Content Moderation & Community Standards</h2>
+    <p>UniConnect maintains strict content moderation policies to ensure all user-generated content adheres to our community standards:</p>
+    <ul>
+        <li><strong>Prohibited Content:</strong> We do not permit explicit sexual content, graphic violence, hate speech, harassment, bullying, or any content that exploits or endangers individuals, including minors.</li>
+        <li><strong>Automated Filtering:</strong> Our platform employs machine learning-based content filtering to detect and flag potentially harmful or inappropriate materials before they appear in user feeds.</li>
+        <li><strong>Human Moderation:</strong> Our dedicated moderation team reviews flagged content 24/7 to ensure swift removal of any violations and consistent enforcement of community guidelines.</li>
+        <li><strong>Real-Time Detection:</strong> Our systems continuously monitor user profiles, uploaded images, and messaging interactions for signs of exploitation, grooming, or abuse.</li>
+    </ul>
+
+    <h2>4. Protecting Minors from Predatory Behavior</h2>
+    
+    <div class="warning-box">
+        <strong>Zero Tolerance for Child Exploitation:</strong> UniConnect has zero tolerance for any form of child exploitation, grooming, or abuse. Any account identified as engaging in predatory behavior toward minors will be immediately suspended and reported to relevant law enforcement and child protection authorities.
+    </div>
+
+    <h3>Grooming Prevention Measures</h3>
+    <p>We employ multiple safeguards to prevent grooming and predatory contact:</p>
+    <ul>
+        <li><strong>Age-Gating Enforcement:</strong> Our identity verification system prevents individuals from falsely representing their age. The 3D facial recognition check ensures the person on the account matches their credentials.</li>
+        <li><strong>Suspicious Pattern Detection:</strong> Our AI systems flag accounts exhibiting patterns consistent with grooming behavior, such as adults seeking private communication with users claiming to be much younger.</li>
+        <li><strong>Messaging Safety Protocols:</strong> Private messages are fully encrypted and monitored for language patterns indicative of exploitation or inappropriate contact with minors.</li>
+        <li><strong>Rapid Response Team:</strong> Our child safety team investigates all reports of suspected grooming within 24 hours and escalates serious cases to law enforcement.</li>
+    </ul>
+
+    <h2>5. Reporting & Response Mechanisms</h2>
+
+    <h3>User Reporting Tools</h3>
+    <p>UniConnect provides multiple pathways for reporting concerns:</p>
+    <div class="feature-list">
+        <div class="feature-item">
+            <strong>In-App Reporting</strong>
+            Users can report any profile, image, or message that violates our safety policies directly through the application. Reports are immediately routed to our moderation team for investigation.
+        </div>
+        <div class="feature-item">
+            <strong>Blocking Functionality</strong>
+            Users maintain absolute control to instantly block any account. Blocked users cannot access your profile, send messages, or interact with your content in any way.
+        </div>
+        <div class="feature-item">
+            <strong>Direct Email Escalation</strong>
+            Serious safety concerns can be reported directly to our dedicated safety team via email for immediate investigation and escalation if necessary.
+        </div>
+    </div>
+
+    <h3>Enforcement & Investigation</h3>
+    <ul>
+        <li>All reported concerns are investigated by our trained safety specialists within 24 hours.</li>
+        <li>Verified violations result in immediate account suspension or permanent termination.</li>
+        <li>Serious offenses (exploitation, abuse, illegal activity) are escalated to appropriate law enforcement authorities and child protection services.</li>
+        <li>We cooperate fully with law enforcement investigations and child safety organizations.</li>
+    </ul>
+
+    <div class="highlight">
+        <strong>Transparency Reports:</strong> UniConnect is committed to transparency regarding child safety. We regularly publish safety transparency reports detailing the number of reports received, investigations conducted, and enforcement actions taken.
+    </div>
+
+    <h2>6. Data Privacy for Younger Users</h2>
+    <p>Should a user under 18 gain access to UniConnect through unauthorized means, we apply heightened data protection standards:</p>
+    <ul>
+        <li><strong>Minimal Data Collection:</strong> We collect only essential data required for platform functionality and safety verification.</li>
+        <li><strong>No Behavioral Tracking:</strong> We do not engage in targeted behavioral advertising or tracking that would profitably exploit user data, particularly for younger demographics.</li>
+        <li><strong>Parental Rights:</strong> Parents or guardians of users under 18 may request complete account deletion and data erasure at any time without penalty.</li>
+        <li><strong>Encrypted Communications:</strong> All user messages are end-to-end encrypted, ensuring communications remain private and inaccessible to advertising networks or third parties.</li>
+        <li><strong>No Sale of Data:</strong> We never sell, trade, or monetize personal data from any user, particularly minors.</li>
+    </ul>
+
+    <h2>7. Parental Guidance & Resources</h2>
+    <p>While UniConnect is designed for adults, parents should be aware of the platform's existence and may wish to discuss online safety with their children:</p>
+
+    <h3>For Parents & Guardians</h3>
+    <ul>
+        <li><strong>Have Open Conversations:</strong> Talk to your children about online safety, respectful communication, and how to recognize suspicious behavior.</li>
+        <li><strong>Encourage Reporting:</strong> Let children know they can always report uncomfortable interactions to you and to platform moderators.</li>
+        <li><strong>Monitor Online Activity:</strong> Be aware of the apps and platforms your children use, and maintain open communication about their digital experiences.</li>
+        <li><strong>Teach Critical Thinking:</strong> Help children understand that online profiles may not represent real people, and that they should be cautious about sharing personal information.</li>
+    </ul>
+
+    <h3>Resources for Help</h3>
+    <ul>
+        <li><a href="https://www.ncmec.org/" target="_blank">National Center for Missing & Exploited Children (NCMEC)</a> — Provides resources and reporting mechanisms for child exploitation.</li>
+        <li><a href="https://www.fbi.gov/tips" target="_blank">FBI Tips Line</a> — Report serious crimes and suspected exploitation to the Federal Bureau of Investigation.</li>
+        <li><a href="https://www.cybertipline.org/" target="_blank">CyberTipline</a> — Report online exploitation and abuse to the Internet Crimes Against Children task force.</li>
+        <li><strong>Childhelp National Child Abuse Hotline:</strong> 1-800-422-4453 — Available 24/7 for reporting abuse and accessing support resources.</li>
+    </ul>
+
+    <h2>8. Device-Level Security Features</h2>
+    <p>UniConnect provides several device-level security options that enhance account protection:</p>
+    <ul>
+        <li><strong>App Access Lock:</strong> Users can enable a biometric lock (fingerprint, face recognition) or PIN to secure the app on their device.</li>
+        <li><strong>Session Management:</strong> Users can view active sessions and remotely log out from other devices if unauthorized access is suspected.</li>
+        <li><strong>Two-Factor Authentication:</strong> Additional security layers ensure that even if account credentials are compromised, unauthorized access is prevented.</li>
+    </ul>
+
+    <h2>9. Location Data & Safety</h2>
+    <p>UniConnect collects location data exclusively to facilitate campus-based peer matching. Important safeguards include:</p>
+    <ul>
+        <li><strong>Location-Based Matching Only:</strong> Location coordinates are used solely to calculate distances and match nearby peers. We do not sell location data or share it with marketing networks.</li>
+        <li><strong>No Historical Tracking:</strong> We do not maintain logs of your historical location movements.</li>
+        <li><strong>User Control:</strong> Users can disable location-based features at any time, and location permissions can be revoked through device settings.</li>
+    </ul>
+
+    <h2>10. Compliance with Legal Frameworks</h2>
+    <p>UniConnect operates in compliance with international child safety regulations and data protection laws, including:</p>
+    <ul>
+        <li><strong>COPPA (Children's Online Privacy Protection Act):</strong> Though UniConnect is not marketed to children, we apply COPPA-aligned protections if a minor gains access.</li>
+        <li><strong>GDPR (General Data Protection Regulation):</strong> We comply with GDPR requirements for any users within the European Union.</li>
+        <li><strong>Kenyan Data Protection Laws:</strong> Our operations align with Kenya's data protection and privacy frameworks.</li>
+        <li><strong>Online Safety Institute Standards:</strong> We adhere to recognized best practices for platform safety and child protection.</li>
+    </ul>
+
+    <h2>11. Continuous Improvement & Third-Party Audits</h2>
+    <p>Our commitment to child safety is ongoing and proactive:</p>
+    <ul>
+        <li><strong>Regular Audits:</strong> We conduct quarterly internal audits of our safety systems, content moderation, and enforcement protocols.</li>
+        <li><strong>Third-Party Review:</strong> We engage independent child safety experts to review our policies and recommend improvements.</li>
+        <li><strong>Technology Updates:</strong> We continuously update our AI-powered content detection systems to identify new threats and exploit vectors.</li>
+        <li><strong>Staff Training:</strong> Our moderation and safety teams receive ongoing training on recognizing and responding to child exploitation patterns.</li>
+    </ul>
+
+    <h2>12. Reporting Concerns & Contact Information</h2>
+
+    <div class="contact-section">
+        <h3 style="color: var(--primary-navy); margin-top: 0;">Child Safety Concerns</h3>
+        <p><strong>For urgent safety concerns or suspected child exploitation, please contact:</strong></p>
+        <p style="font-size: 1.1rem; margin: 15px 0;">
+            <strong>Email:</strong> <a href="mailto:uniconnect.review@gmail.com">uniconnect.review@gmail.com</a>
+        </p>
+        <p style="font-size: 1.1rem; margin: 15px 0;">
+            <strong>Alternative Contact:</strong> <a href="mailto:machariasamuel465@gmail.com">machariasamuel465@gmail.com</a>
+        </p>
+        <p style="margin-top: 20px; font-size: 0.95rem;">For serious crimes or suspected exploitation, please also contact local law enforcement or the CyberTipline at <a href="https://www.cybertipline.org/" target="_blank">www.cybertipline.org</a>.</p>
+    </div>
+
+    <h2>13. Jurisdiction & Governing Law</h2>
+    <p>This Child Safety Policy is governed in accordance with the legal frameworks and data protection acts of Kenya, consistent with our Terms of Service and Privacy Policy.</p>
+
+    <h2>14. Policy Updates</h2>
+    <p>UniConnect reserves the right to update this Child Safety Policy as needed to reflect technological advancements, legal changes, or improvements to our safety protocols. Users will be notified of material changes via email or through the application.</p>
+
+    <div class="highlight">
+        <strong>Your Safety Matters:</strong> Child safety is not a feature—it's a fundamental responsibility. If you witness any violation of this policy, please report it immediately to our safety team. Together, we create a safer digital community for everyone.
+    </div>
+
+</body>
+</html>
